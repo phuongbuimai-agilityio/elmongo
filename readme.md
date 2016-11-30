@@ -185,6 +185,14 @@ Cat.search({ query: 'si', fields: [ 'name' ] }, function (err, searchResults) {
 
 -------
 
+#Setting Elasticsearch authentication
+In case your Elasticsearch server requires username and password for authenticate. You can add username and password with format [username:password@]host
+Example:
+```js
+Cat.plugin(elmongo, { host: 'username:password@localhost', port: 9200})
+```
+-------
+
 ## Running the tests
 
 ```
